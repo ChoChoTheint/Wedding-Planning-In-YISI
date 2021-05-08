@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Us</title>
+    <style>
+        #bg_img{
+            background: url("https://blog.brilliance.com/wp-content/uploads/2017/10/wedding-rings-2.jpg?fbclid=IwAR35yXqz9rUKUqdRGwmbStwR4crda2lENDwxBEbgxzgXelQM54oVeB8uCwU");
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1500px 800px;
+            /* position: relative; */
+        }
+        
+        label{
+            font-size: 18px;
+        }
+        input[type="text"]{
+            /* background-color: rgb(48, 197, 172); */
+            width: 700px;
+            height: 50px;
+        }
+        input[type="email"]{
+            /* background-color: rgb(48, 197, 172); */
+            width: 700px;
+            height: 50px;
+        }
+        textarea[name="address"]{
+            /* background-color: rgb(48, 197, 172); */
+            width: 700px;
+            height: 150px;
+        }
+        input[type="tel"]{
+            /* background-color: rgb(48, 197, 172); */
+            width: 700px;
+            height: 50px;
+        }
+        button[type="submit"]{
+            background-color: black;
+            color: blanchedalmond;
+            width: 60px;
+            height: 40px;
+        }
+        /* placeholder{
+            color: rgb(19, 18, 18);
+        } */
+        .parent{
+            display: flex;
+        }
+        .child2{
+            padding-left: 22px;
+        }
+        .p1{
+           font-size: 22px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div style="margin-bottom: 0px;font-family: Monotype Corsiva;font-size: 25px;">
+        <table>
+            <tr>
+                <td>
+                    <a href="homepage.html">Home</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+                    
+                   <span> <a href="">Categories</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </span>
+                   
+                </div>  
+
+
+                </td>
+                <td class="photo">
+                    <img src="logo.png" class="photo" width="400px" height="150px" >
+                </td>
+                <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                    <a href="cash.html">Cash & booking</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                    <a href="contactus.html">Contact us</a>
+                </td>
+            </tr>
+        </table>
+
+    
+
+
+    </div>
+    </center>
+    <div id="bg_img">
+        <!-- <nav>
+            <a href="">Home</a>
+            <a href="">Cetegori</a>
+            <a href="">Booking</a>
+            <a href="">Cash</a>
+            <a href="">Contect Us</a>
+        </nav>
+         -->
+        <!-- <h1 >Contact Us</h2> -->
+        </div><br>
+    <!-- <div><img src="https://i.pinimg.com/236x/75/62/4b/75624b12258e30f4bd7e4309da94dc2b.jpg" width="800px" height="500px" ></div> -->
+    <div class="parent">
+        <section class="child1">
+        
+        <form>
+            <label for="name">Name </label><br>
+            <input type="text" name="name" placeholder="Enter Your Name"><br><br>
+            <label for="email">Email </label><br>
+            <input type="email" name="email" placeholder="Enter Your Email"><br><br>
+            <label for="ph no">Phone Number</label><br>
+            <input type="tel" name="ph no" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter Your Phone Number"><br><br>
+            <label for="message">Message</label><br>
+            <textarea name="address" placeholder="Enter Your Address"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+        <section class="child2">
+            <h2>Contact Us & Let’s Collaborate!</h2>
+            <p>If you have any questions about our wedding planning services please get in touch with us today.</p>
+            
+            <p class="p1">Address:</p>
+            <p>233 Spaces Victoria
+                25 Wilton Road
+                London
+                SW1V 1LW
+            </p>
+            
+                <p class="p1">Email:</p>
+                <p>sayido@gmail.com</p>
+            
+            <p class="p1">Phone:</p>
+            <p>(+01) 020 3920 8085</p>
+        </section>
+    </div>
+</body>
+</html>

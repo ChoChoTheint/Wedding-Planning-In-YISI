@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Cash & Booking</title>
+	<style type="text/css">
+		.calendar{margin-left:20px;
+			width:500px;
+			height:400px;
+			color:purple;}
+		.input[type=text]{
+			width:600px;height:30px;
+			background-color:#FFE4E1;
+			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+
+		}
+		select,input[type=date]{
+			width:600px;height:30px;
+			background-color:#FFE4C4;
+			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+  			padding-left:10px;
+  			
+
+		}
+		textarea{
+			width:50%;height:100px;
+			background-color:#FFE4C4;
+			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+  			
+		}
+		body{background-color:#F5F5DC;}
+		h4{color:#CD5C5C;}
+		.title{color:#808000;font-family:papyrus;}
+		.title1{color:#DAA520;font-family: Comic Sans MS;}
+		.button{background-color:chocolate;
+		color:white;
+		width:300px;
+		height:60px;
+		border: none;
+  		border-radius: 4px;
+  		cursor: pointer;
+  		margin-left:60px;
+  		font-family: Stencil Std;} 
+  		.button1{
+  			width:100%;
+  			height:40px;
+  			border: none;
+  			border-radius: 4px;
+  			cursor: pointer;
+  			background-color:grey;
+  			font-family: 'Century Gothic'
+  		}
+  		input[type=submit]:hover {background-color:coral;}
+  		input[type=button]:hover{background-color:silver; }
+  		
+  		.footer{background-color:khaki;
+  			width:100%;
+  			height:200px;
+  			text-align: center;
+  			font-family: "Goudy Old Style"
+
+  			}
+  		.color{color:darkolivegreen;}
+  		.center{margin-left:300px;}
+  		.col-50 {
+  			-ms-flex: 50%; /* IE10 */
+  			flex: 50%;
+			padding: 0 16px;
+			size:100;
+		}
+		.payment{width:600px;height:30px;
+			background-color:white;
+			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;}
+  		.font{font-family: Comic Sans MS;}
+  		i{font-size:100;}
+
+	</style>
+	
+</head>
+<body>
+	<h1 class="title">BOOK NOW!</h1>
+	<hr width="1250px" size="3px" align="center" color=#BDB76B><br>
+	<form class="center">
+					<div class="margin">
+						<h3 class="title1">PERSONAL INFORMATION</h3>
+						<h4>First Name</h4>
+						<i class="fa fa-user-circle"></i><input class="input" type="text" name="fname"><br><br>
+						<h4>Last Name</h4>
+						<i class="fa fa-user-circle-o"></i><input class="input" type="text" name="lname"><br><br>
+						<h4>Ph No.</h4><i class="fa fa-phone"></i>
+						<input class="input" type="text" name="phno"><br><br>
+						<h4>Email Address</h4><i class="fa fa-envelope"></i>
+						<input class="input" type="text" name="email">
+					</div><br><br>
+		<div class="margin">
+			<h3 class="title1">RESERRVATION INFORMATION</h3>
+			<h4>Type of Event</h4>
+			<select>
+				<option>Wedding</option>
+				<option>Engagement</option>
+				<option>Anniversary</option>
+				<option>Other</option>
+			</select><br><br>
+			<h4>Estimate Budget</h4>
+			<select>
+				<option>$5000-$10000</option>
+				<option>$10000-$20000</option>
+				<option>$20000-$30000</option>
+				<option>more than $30000</option>
+			</select><br><br>
+			<h4>Appointment Date</h4>
+			<input type="date" name="date"><br><br>
+			<h4>Comment</h4>
+			<textarea rows="3" cols="50%" background-color:#FFE4C4;></textarea><br><br>
+			<input type="submit" value="Book" class="button">
+		</div>
+		</form><br><br>
+		<table>
+			<tr>
+		
+			<td><iframe width="500px" height="400px" src="https://calendar.google.com/calendar/embed?src=of759lb6gsbo22at9ql2s8ehc8%40group.calendar.google.com&ctz=Asia%2F" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe><br><br></td>
+			<td><form>
+				<div class="col-50">
+            		<h2 style="font-family:impact ;color:grey">Payment Form</h2>
+            		<label for="fname" style="font-family:'Century Gothic';color:indianred;">Accepted Cards</label>
+            	<div>
+              		<i class="fa fa-cc-visa" style="color:navy;"></i>
+              		<i class="fa fa-cc-amex" style="color:blue;"></i>
+              		<i class="fa fa-cc-mastercard" style="color:red;"></i>
+              		<i class="fa fa-cc-discover" style="color:orange;"></i>
+            	</div><br><br>
+            	<div>
+            		<label for="cname" class="font">Name on Card</label><br>
+            		<input class="payment" type="text" id="cname" name="cardname" placeholder="Name"><br><br>
+
+            		<label for="ccnum" class="font">Credit card number</label><br>
+            		<input class="payment" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br><br>
+
+            		<label for="expmonth" class="font">Exp Month</label><br>
+            		<input class="payment" type="text" id="expmonth" name="expmonth" placeholder="December"><br><br>
+            
+                	<label for="expyear" class="font">Exp Year</label><br>
+                	<input class="payment" type="text" id="expyear" name="expyear" placeholder="2020"><br><br>
+              
+                	<label for="cvv" class="font">CVV</label><br>
+                	<input class="payment" type="text" id="cvv" name="cvv" placeholder="CVV"><br><br>
+
+                	<input type="button" value="NEXT" class="button1">
+              
+            	</div>
+            </div>
+
+			</form></td>
+		</tr>
+		</table>
+		<br><br>
+
+
+		<div class="footer"><br><br>
+			<hr width="350px" align="center" color="brown">
+			<h2 class="color">"Faith makes all things possible. Love makes all things easy."</h2>
+			<h2 class="color">"May your love continue and grow each and every year."</h2>
+			<hr width="350px" align="center" color="brown">
+		</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  font-family: Helvetica, sans-serif;
+  padding:1px;
+  text-align: center;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 350px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 5s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background-image:url("https://media.istockphoto.com/photos/closeup-of-christmas-tree-with-light-snow-flake-christmas-and-new-picture-id1183340450?b=1&k=6&m=1183340450&s=170667a&w=0&h=d3wL6Dx3Su3puNxDm2rf5YT7x404xVEYsOfZP3ojFy0%3D&fbclid=IwAR29nawotIHX78GNxiNKsZQFDa0ZpQc_wA2R-SVohW8fIGg7yHoQE8bYomE");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 5px;
+
+
+
+
+}
+
+.slide:nth-child(2) {
+  background:url("https://media.istockphoto.com/photos/dessert-table-of-delicious-sweets-on-wedding-reception-picture-id1205588601?b=1&k=6&m=1205588601&s=170667a&w=0&h=CQJT_gAwXrq4cyhpPl38bmjK0p5b5_c-ACR17OvUxCs%3D&fbclid=IwAR3cEhj-_TEgompkPkzFEupYKwcbbBLBPomRDFiTJ1JnpzYhQ91pFctZYUg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.slide:nth-child(3) {
+  background: url("https://media.istockphoto.com/photos/closeup-decoration-with-fresh-flowers-of-venues-wedding-arch-with-picture-id1225578697?b=1&k=6&m=1225578697&s=170667a&w=0&h=4hIj2oFVWbi-7kl7XSku9xVcGTi25BWQL2wRc0wwL-c%3D&fbclid=IwAR0BRPoqieKaDU4tefnkLCjOl-2ZGW1_vhgpXzwrBd3AJwUGeecNVJYJgs8");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide:nth-child(4) {
+  background: url("https://images.unsplash.com/photo-1525845097200-f98709181e61?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VkZGluZyUyMGZhdm91cnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60&fbclid=IwAR2T4d089bYkRNoXlwrGi4vHIWhHaiSfo--sYIVLcTPk7ylM2-Drsp7ayJs");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+
+  input[type="text"]
+{
+  margin-left: 20px;
+  width: 300px;
+  height: 25px;
+  padding-left: 15px;
+
+} 
